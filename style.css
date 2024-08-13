@@ -1,0 +1,384 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"General Sans";
+    
+}
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#minicircle{
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    position:absolute;
+    z-index: 999;
+    border-radius: 50%;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+}
+.bounding{
+    width: fit-content;
+    
+    overflow: hidden;
+
+}
+.bounding .boundingelem{
+    transform: translateY(100%);
+}
+#main{
+    width: 100%;
+    background-color: black;
+}
+#hero{
+    width: 100%;   
+    background-color: black;
+    color: white;
+    position: relative;
+    height : 100vh;
+}
+@media (max-width : 1324px){
+     #hero{height: auto;}
+}
+#nav{
+    color: white;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+#heading{
+    margin-top:90px;
+}
+
+#heading h1{
+    font-size: 9vw;
+    text-transform: uppercase;
+    font: weight 900px; 
+    line-height: 1;
+    opacity: 0.6;
+    margin-left: 5vw;
+    
+}
+#heading #secondh1{
+   margin-left: 15vw;
+}
+#choti{
+    text-align: right;
+    margin-right: 40px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 4vw;
+    line-height: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+#choti #for{
+padding-right: 2vw;
+}
+#footer{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom :3%;
+    padding: 0vw 2vw;
+}
+#footer a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+
+}
+#footer #icons{
+display: flex;
+}
+#footer .circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #888;
+    margin-right: 8px;
+}
+#sechero{
+    padding-right: 10vw;
+    
+    width: 100%;
+    background-color: black;
+    color: white;
+
+}
+
+
+.elem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3.5vw 3vw;
+    padding-right: 0;
+    border-top: 1px solid #888;
+}
+
+.elem h1 {
+    text-transform: uppercase;
+    font-size: 7.6vw;
+    opacity: .7;
+    color: rgb(169, 169, 169);
+}
+
+
+  
+.elemlast {
+    border-bottom: 1px solid #888;
+}
+
+.elem img {
+    opacity: 0;
+    pointer-events: none;
+    height: 140%;
+    z-index: 999;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+#about{
+    width: 100%;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20vw;
+    padding-bottom: 7vw;
+}
+#about img{
+    width: 30vw;
+}
+
+#textabout{
+   
+    color: white;
+    font-size: 2vw;
+    width: 50%;
+    
+}
+#textabout h1{
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+#textabout p{
+  line-height: 1;
+  padding-bottom: 3vw;
+}
+#textabout a{
+    padding:12px 22px;
+    border :1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.contacthead{
+    font-size: 8vw;
+    color: rgb(255, 255, 255);
+    padding: 5vw 0;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.container {
+    overflow-x: hidden;
+}
+
+.container form {
+    width: 60vw;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    font-family: "poppins";
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#name {
+    height: 35px;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #1f1f44;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#email {
+    height: 38px;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #181834;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#message {
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #181834;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.row label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 23px;
+    color: white;
+}
+
+body.dark-mode .row label {
+    color: #2a2a2a;
+}
+
+.row input[type="text"],
+.row textarea {
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.row textarea {
+    height: 100px;
+}
+
+.mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid button {
+    height: 45px;
+    width: 140px;
+    border-radius: 10px;
+    background-color: #9d9d9d;
+    font-size: 110%;
+    color: rgb(39, 39, 39);
+    border: 3px solid #0e0e0e;
+}
+
+body.dark-mode .mid button {
+    border: 3px solid rgb(183, 174, 210);
+}
+
+.mid button:hover {
+    background-color: #c4c4c4;
+}
+
+@media (max-width : 700px) {
+    .contactme {
+        margin-bottom: 30px;
+    }
+
+    .row label {
+        font-size: large;
+    }
+
+    #name {
+        height: 32px;
+    }
+
+    #email {
+        height: 35px;
+    }
+
+    #message {
+        height: 80px;
+    }
+
+    .container form {
+        width: 86vw;
+    }
+
+}
+
+@media (max-width : 360px) {
+    .contactme {
+        margin-bottom: 20px;
+    }
+
+    .row label {
+        font-size: medium;
+    }
+
+    .mid button {
+        height: 42px;
+        width: 120px;
+        font-size: 90%;
+    }
+
+    .row {
+        margin-bottom: 15px;
+    }
+}
+#ffooter{
+display: flex;
+align-items: center; 
+justify-content: space-between;
+padding: 20px 30px;
+background-color:black;
+color: white;
+}
+#ffooterleft{
+    display: flex;
+    gap :20px 
+
+}
+#ffooter a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+#ffooterright{
+   display: flex;
+   gap: 3vw;
+}
+
+.pageline{
+    height: 1px;
+    background-color: whitesmoke;
+    width: 90vw;
+    margin: 5vw ;
+}
